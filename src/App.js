@@ -15,18 +15,17 @@ function App() {
   return (
     <div>
       <Grid container columns="equal" style={{ marginTop: "10px" }}>
-        <Grid.Column textAlign="right">
+        <Grid.Column textAlign="center">
           <Flag name="id" />
         </Grid.Column>
-        <Grid.Column textAlign="center">
+        <Grid.Column width={1} textAlign="center">
           <Icon name="angle left" size="big" />
         </Grid.Column>
-        <Grid.Column textAlign="center">
+        <Grid.Column width={1} textAlign="center">
           <Icon name="angle right" size="big" />
         </Grid.Column>
-        <Grid.Column width={8}>
-          <Input
-            style={{ width: "525px" }}
+        <Grid.Column width={10}>
+          <Input fluid
             type="text"
             placeholder="search..."
             icon={<Icon name="star" />}
